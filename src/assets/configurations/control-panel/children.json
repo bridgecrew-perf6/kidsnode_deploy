@@ -1,0 +1,151 @@
+{
+    "widgets": [
+        {
+            "title": "Orders",
+            "width": "col-md-3",
+            "value": 15,
+            "icon": "check_circle"
+        },
+        {
+            "title": "Orders",
+            "width": "col-md-3",
+            "value": 25,
+            "icon": "schedule"
+        },
+        {
+            "title": "Orders",
+            "width": "col-md-3",
+            "value": 120,
+            "icon": "fingerprint"
+        },
+        {
+            "title": "Orders",
+            "width": "col-md-3",
+            "value": 65,
+            "icon": "verified"
+        },
+        {
+            "type": "complex",
+            "title": "Evidencija prisutnosti - deca",
+            "items": [
+                {
+                    "width": "col-md-6",
+                    "title": "Prisutno",
+                    "value": 25
+                },
+                {
+                    "width": "col-md-6",
+                    "title": "Nije prisutno",
+                    "value": 2
+                }
+            ],
+            "buttons": [
+                {
+                    "title": "Pogledaj evidenciju dolazaka",
+                    "class": "button-action e-info e-control e-btn",
+                    "url": "/dashboard/children/records-of-arrivals"
+                }
+            ],
+            "width": "col-md-6",
+            "value": 1235,
+            "icon": "group"
+        },
+        {
+            "type": "complex",
+            "title": "Evidencija prisutnosti - zaposleni",
+            "items": [
+                {
+                    "width": "col-md-6",
+                    "title": "Prisutno",
+                    "value": 55
+                },
+                {
+                    "width": "col-md-6",
+                    "title": "Nije prisutno",
+                    "value": 12
+                }
+            ],
+            "buttons": [
+                {
+                    "title": "Pogledaj evidenciju dolazaka",
+                    "class": "button-action e-info e-control e-btn",
+                    "url": "/dashboard"
+                }
+            ],
+            "width": "col-md-6",
+            "value": 1235,
+            "icon": "group"
+        }
+    ],
+    "charts": [
+        {
+            "type": "pie",
+            "name": "statistic",
+            "title": "Statistika 2",
+            "width": "col-md-4",
+            "request": {
+                "type": "GET",
+                "api": "/api/control-panel/getChildrensStatistic",
+                "parameters": [],
+                "fields": "",
+                "root": ""
+            },
+            "xName": "date",
+            "yName": "number"
+        },
+        {
+            "type": "column",
+            "title": "Dolasci u prethodnim danima",
+            "width": "col-md-8",
+            "name": "arrives",
+            "request": {
+                "type": "GET",
+                "api": "/api/control-panel/getChildrensStatistic",
+                "parameters": [],
+                "fields": "",
+                "root": ""
+            },
+            "xName": "date",
+            "yName": "number",
+            "primaryXAxis": {
+                "valueType": "Category",
+                "interval": 1,
+                "majorGridLines": {
+                    "width": 0
+                }
+            },
+            "primaryYAxis": {
+                " majorGridLines": {
+                    "width": 0
+                },
+                "majorTickLines": {
+                    "width": 0
+                },
+                "lineStyle": {
+                    "width": 0
+                },
+                "labelStyle": {
+                    "color": "transparent"
+                }
+            },
+            "marker": {
+                "dataLabel": {
+                    "visible": true,
+                    "position": "Top",
+                    "font": {
+                        "fontWeight": "600",
+                        "color": "#ffffff"
+                    }
+                }
+            },
+            "tooltip": {
+                "enable": true
+            },
+            "chartArea": {
+                "border": {
+                    "width": 0
+                }
+            }
+        }
+    ]
+}

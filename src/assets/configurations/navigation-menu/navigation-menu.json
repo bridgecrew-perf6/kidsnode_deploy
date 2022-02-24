@@ -1,0 +1,248 @@
+[
+  {
+    "title": "Kontrolni panel",
+    "rights": [
+      "superadmin",
+      "director",
+      "owner",
+      "parent"
+    ],
+    "menu": [
+      {
+        "icon": "admin_panel_settings",
+        "title": "Kontrolni panel",
+        "children": [
+          {
+            "icon": "text_snippet",
+            "title": "Deca",
+            "link": "/dashboard/control-panel/childrens",
+            "rights": "",
+            "isDefault": true
+          },
+          {
+            "icon": "speaker_notes",
+            "title": "Zaposleni",
+            "link": "/dashboard/control-panel/employee",
+            "rights": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Deca",
+    "rights": [
+      "superadmin",
+      "owner",
+      "director",
+      "educator",
+      "parent",
+      "speech_therapist",
+      "pedagogue",
+      "psychologist",
+      "pediatrician"
+    ],
+    "menu": [
+      {
+        "icon": "child_care",
+        "title": "Popis dece",
+        "link": "/dashboard/children/all-childrens"
+      },
+      {
+        "icon": "assignment_turned_in",
+        "title": "Evidencija dolazaka",
+        "link": "/dashboard/children/records-of-arrivals",
+        "rights": ""
+      },
+      {
+        "icon": "event",
+        "title": "Kalendar aktivnosti",
+        "link": "/dashboard/children/calendar-of-children-activity",
+        "rights": ""
+      }
+    ]
+  },
+  {
+    "title": "Organizacija",
+    "rights": [
+      "superadmin",
+      "owner",
+      "director",
+      "finance"
+    ],
+    "menu": [
+      {
+        "icon": "badge",
+        "title": "Zaposleni",
+        "link": "/dashboard/employee/all-employees",
+        "rights": ""
+      }
+    ]
+  },
+  {
+    "title": "Finansije",
+    "rights": [
+      "superadmin",
+      "director",
+      "owner",
+      "finance"
+    ],
+    "menu": [
+      {
+        "icon": "paid",
+        "title": "Uplate",
+        "link": "/dashboard/invoices/children-invoices",
+        "rights": ""
+      },
+      {
+        "icon": "receipt",
+        "title": "Generiši fakturu",
+        "link": "/dashboard/invoices/invoice-form",
+        "rights": ""
+      }
+    ]
+  },
+  {
+    "title": "Zaposleni",
+    "rights": [
+      "superadmin",
+      "director",
+      "owner",
+      "finance"
+    ],
+    "menu": [
+      {
+        "icon": "import_contacts",
+        "title": "Dnevnik rada",
+        "link": "/dashboard/employee/work-diary",
+        "rights": ""
+      }
+    ]
+  },
+  {
+    "title": "Službe",
+    "rights": [
+      "superadmin",
+      "director",
+      "owner",
+      "speech_therapist",
+      "pedagogue",
+      "psychologist",
+      "pediatrician"
+    ],
+    "menu": [
+      {
+        "icon": "monitor_heart",
+        "title": "Zdravstvena zlužba",
+        "link": "/dashboard/services/health"
+      }
+    ]
+  },
+  {
+    "title": "Hrana",
+    "rights": [
+      "superadmin",
+      "director",
+      "owner",
+      "speech_therapist",
+      "pedagogue",
+      "psychologist",
+      "pediatrician"
+    ],
+    "menu": [
+      {
+        "icon": "restaurant",
+        "title": "Hrana",
+        "link": "",
+        "rights": "",
+        "children": [
+          {
+            "icon": "work",
+            "title": "Jela",
+            "link": "/dashboard/parameters/food",
+            "rights": ""
+          },
+          {
+            "icon": "receipt_long",
+            "title": "Jelovnik",
+            "link": "/dashboard/parameters/food-menu",
+            "rights": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Administracija",
+    "rights": [
+      "superadmin",
+      "director",
+      "owner"
+    ],
+    "menu": [
+      {
+        "icon": "work",
+        "title": "Posao",
+        "link": "",
+        "rights": "",
+        "children": [
+          {
+            "icon": "work",
+            "title": "Radna mesta",
+            "link": "/dashboard/parameters/work-places",
+            "rights": ""
+          },
+          {
+            "icon": "receipt_long",
+            "title": "Vrste rada",
+            "link": "/dashboard/parameters/type-of-work",
+            "rights": ""
+          },
+          {
+            "icon": "receipt_long",
+            "title": "Opsti ugovori",
+            "link": "/dashboard/parameters/general-contracts",
+            "rights": ""
+          }
+        ]
+      },
+      {
+        "icon": "local_shipping",
+        "title": "Dobavljaci",
+        "link": "",
+        "rights": "",
+        "children": [
+          {
+            "title": "Spisak dobavljaca",
+            "link": "/dashboard/parameters/suppliers-company",
+            "rights": ""
+          },
+          {
+            "title": "Računi",
+            "link": "/dashboard/parameters/invoice-suppliers",
+            "rights": ""
+          }
+        ]
+      },
+      {
+        "icon": "groups",
+        "title": "Grupe",
+        "children": [
+          {
+            "icon": "text_snippet",
+            "title": "Upisne grupe",
+            "link": "/dashboard/children/group",
+            "rights": "",
+            "isDefault": true
+          },
+          {
+            "icon": "speaker_notes",
+            "title": "Grupe u vrticu",
+            "link": "/dashboard/children/subgroup",
+            "rights": ""
+          }
+        ]
+      }
+    ]
+  }
+]

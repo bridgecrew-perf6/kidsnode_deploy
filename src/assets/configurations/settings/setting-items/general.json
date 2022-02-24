@@ -1,0 +1,171 @@
+{
+    "class": "margin-auto width-60",
+    "actionButtons": {
+        "class": "text-right p-3",
+        "simpleButtons": [],
+        "dropDownButtons": {
+            "content": "Opcije",
+            "items": [
+                {
+                    "text": "Uredi",
+                    "id": "edit",
+                    "iconCss": "ddb-icons e-edit"
+                }
+            ]
+        },
+        "splitButtons": {
+            "content": "",
+            "items": []
+        },
+        "rights": [
+            "owner",
+            "director"
+        ]
+    },
+    "request": {
+        "type": "GET",
+        "api": "/api/getKindergardenGeneralInfo/",
+        "url": [],
+        "parameters": [],
+        "fields": "",
+        "root": ""
+    },
+    "editSettingsRequest": {
+        "add": {
+            "type": "POST",
+            "api": "/api/createKindergardenGeneralInfo",
+            "parameters": [],
+            "fields": "",
+            "root": ""
+        },
+        "edit": {
+            "type": "POST",
+            "api": "/api/updateKindergardenGeneralInfo",
+            "parameters": [],
+            "fields": "",
+            "root": ""
+        }
+    },
+    "config": [
+        {
+            "type": "label",
+            "width": "col-md-12",
+            "title": "Vrtić",
+            "text": "U nastavku se nalaze osnovne informaicije o Vašem vrtiću!"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12 hide",
+            "class": "e-outline",
+            "name": "id",
+            "title": "ID",
+            "field": "id",
+            "readonly": true
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "name",
+            "title": "Ime vrtića",
+            "field": "name"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "address",
+            "title": "Adresa",
+            "field": "address"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "telephone",
+            "title": "Telefon",
+            "field": "telephone"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "email",
+            "title": "Email",
+            "field": "email"
+        },
+        {
+            "type": "label",
+            "width": "col-md-12",
+            "title": "Kontakt osoba",
+            "text": "Osnovne informacije o kontakt osobi."
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "contact_person_firstname",
+            "title": "Ime",
+            "field": "contact_person_firstname"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "contact_person_lastname",
+            "title": "Prezime",
+            "field": "contact_person_lastname"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-12",
+            "class": "e-outline",
+            "name": "contact_person_address",
+            "title": "Adresa",
+            "field": "contact_person_address"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "contact_person_telephone",
+            "title": "Telefon",
+            "field": "contact_person_telephone"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "contact_person_email",
+            "title": "Email",
+            "field": "contact_person_email"
+        },
+        {
+            "type": "label",
+            "width": "col-md-12",
+            "title": "Finansije",
+            "text": "Broj ziro racuna vrtića na kome stizati uplate"
+        },
+        {
+            "type": "textbox",
+            "width": "col-md-6",
+            "class": "e-outline",
+            "name": "account_number",
+            "title": "Broj žiro računa vrtića",
+            "field": "account_number"
+        },
+        {
+            "type": "button",
+            "width": "col-md-12",
+            "class": "e-info  button-action",
+            "name": "submit",
+            "title": "saveButton",
+            "field": "submit",
+            "positionClass": "position-end mt-3 col-md-12",
+            "rights": [
+                "owner",
+                "director"
+            ]
+        }
+    ]
+}
